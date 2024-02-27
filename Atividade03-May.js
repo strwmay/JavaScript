@@ -26,7 +26,7 @@ console.log(numeros[2]); // 2- mostrar terceiro elemento
 var numerosCopia = numeros.slice() // 3- fazendo uma cópia
 console.table(numerosCopia)
 
-numerosCopia [0] = numeros[0] *2
+numerosCopia [0] = numeros[0] *2 // 4- dobrando valores
 numerosCopia [1] = numeros[1] *2
 numerosCopia [2] = numeros[2] *2
 numerosCopia [3] = numeros[3] *2
