@@ -62,4 +62,3 @@ console.log("O " + elementoProcurado + " está no índice " + posicao);
 var elementoProcurado = "Tuxedo";
 var posicao = gatos.indexOf(elementoProcurado);
 console.log("O " + elementoProcurado + " está no índice " + posicao);
-
