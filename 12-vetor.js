@@ -39,7 +39,26 @@ gatos.pop(); // remove o ultimo elemneto do vetor
 console.table(gatos);
 
 gatos.shift(); // remove primeiro elemento do vetor
-console.log(gatos)
+console.log(gatos);
 
-gatos.splice(1, 1) //remove o elemento a partir do indice 1, contanto 1
+gatos.splice(1, 1); //remove o elemento a partir do indice 1, contanto 1
 console.table(gatos);
+console.log("");
+
+console.log("------------------ Continuação da Aula ------------------");
+console.log("");
+
+var gatos = ["Mainecoon", "Munchkin", "British", "Ragdoll", "Tuxedo"];
+
+console.table(gatos);
+var elementoProcurado = "British";
+var posicao = gatos.indexOf(elementoProcurado); // o indexOf retorna um valor no indice da tela
+console.log("O " + elementoProcurado + " está no índice " + posicao);
+
+var elementoProcurado = "Ragdoll";
+var posicao = gatos.indexOf(elementoProcurado);
+console.log("O " + elementoProcurado + " está no índice " + posicao);
+
+var elementoProcurado = "Tuxedo";
+var posicao = gatos.indexOf(elementoProcurado);
+console.log("O " + elementoProcurado + " está no índice " + posicao);
