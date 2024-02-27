@@ -23,8 +23,8 @@ console.log("");
 var numeros = [1, 2, 3, 4, 5]; // 1- criar vetor com 5 elementos
 console.log(numeros[2]); // 2- mostrar terceiro elemento
 
-console.table(numeros);
+var numerosCopia = numeros.slice() // 3- fazendo uma cópia
 
-var numerosCopia = [1, 2, 3, 4, 5].map((number) => number * 2); // 3 e 4- cópia e dobro do valor
+console.table(numerosCopia)
 
-console.table(numerosCopia);
+console.table(numerosCopia.map((number) => number *2)); // 4- duplicando cópia
