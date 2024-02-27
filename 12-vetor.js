@@ -41,7 +41,7 @@ console.table(gatos);
 gatos.shift(); // remove primeiro elemento do vetor
 console.log(gatos);
 
-gatos.splice(1, 1); //remove o elemento a partir do indice 1, contanto 1
+gatos.splice(1, 1); //remove o elemento a partir do indice indicado, e o tanto indicado contando a partir dele
 console.table(gatos);
 console.log("");
 
@@ -62,3 +62,4 @@ console.log("O " + elementoProcurado + " está no índice " + posicao);
 var elementoProcurado = "Tuxedo";
 var posicao = gatos.indexOf(elementoProcurado);
 console.log("O " + elementoProcurado + " está no índice " + posicao);
+
