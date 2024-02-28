@@ -37,9 +37,9 @@ var user = ["Maysa", 15, "Azul Acinzentado", "Lichia", "Jáu-SP", "Pitika"];
 console.table(user);
 console.log("---------------------------------------------------------------------");
 
-console.log("Olá", user[0], "! Boas vindas ao nosso Sistema.");
-console.log("Você mora na cidade de",user[4],", e tem uma cachorrinha chamada",user[5]);
-console.log("Tem", user[1], "anos, e sua fruta favorita é", user[3]);
-console.log("Sua cor favorita é", user[2]);
+console.log(`Olá ${user[0]}! Seja bem-vinda ao nosso Sistema.`);
+console.log(`Você mora na cidade de ${user[4]}, e tem uma cachorrinha chamada ${user[5]}.`);
+console.log(`Tem ${user[1]} anos, e sua fruta favorita é ${user[3]}.`);
+console.log(`Sua cor favorita é ${user[2]}.`);
 
 console.log("---------------------------------------------------------------------");
