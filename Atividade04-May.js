@@ -32,14 +32,14 @@ console.log(
 
 console.log("")
 
-var usuário = ["Maysa", 15, "Azul Acinzentado", "Lichia", "Jáu-SP", "Pitika"];
+var user = ["Maysa", 15, "Azul Acinzentado", "Lichia", "Jáu-SP", "Pitika"];
 
-console.table(usuário);
+console.table(user);
 console.log("---------------------------------------------------------------------");
 
-console.log("Olá", usuário[0], "! Boas vindas ao nosso Sistema.");
-console.log("Você mora na cidade de",usuário[4],", e tem uma cachorrinha chamada",usuário[5]);
-console.log("Tem", usuário[1], "anos, e sua fruta favorita é", usuário[3]);
-console.log("Sua cor favorita é", usuário[2]);
+console.log("Olá", user[0], "! Boas vindas ao nosso Sistema.");
+console.log("Você mora na cidade de",user[4],", e tem uma cachorrinha chamada",user[5]);
+console.log("Tem", user[1], "anos, e sua fruta favorita é", user[3]);
+console.log("Sua cor favorita é", user[2]);
 
 console.log("---------------------------------------------------------------------");
