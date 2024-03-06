@@ -32,7 +32,7 @@ console.log(`Total do desconto: R$ ${Tdesc}`);
 console.log(`Valor final da compra: R$ ${Tpedido-Tdesc}`);
 console.log(`-------------------------------`);
 
-// criando uma função que apresneta uma pessoa
+// criando uma função que apresenta uma pessoa
 function userPrensentation(nome, idade, cidade) {
     console.log(`${nome}, tem ${idade} e mora em ${cidade}`)
 }
