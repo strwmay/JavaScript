@@ -12,31 +12,30 @@ while (popA < popB) {
   popA *= 1.03;
   popB *= 1.015;
   ano++;
-}
+};
 
-console.log("----------------------------------------------------------------------------------------------")
+console.log("----------------------------------------------------------------------------------------------");
 
 console.log(
-  `em ${ano} anos o país A terá uma população de ${Math.round(
-    popA
-  )} habitantes e o país B terá ${Math.round(popB)} habitantes`
+  `em ${ano} anos o país A terá uma população de ${Math.round(popA)} 
+  habitantes e o país B terá ${Math.round(popB)} habitantes`
 );
 
-console.log("----------------------------------------------------------------------------------------------")
+console.log("----------------------------------------------------------------------------------------------");
 
-console.log("")
+console.log("");
 
 // criar um jogo da velha que mostre as informações dentro da imagem abaixo.
 // inserir as informações de forma ramdomica.
 // informar ao final quem ganhou:
 
-console.log("------------------")
+console.log("------------------");
 
-console.log(`   ___|___|___`)
-console.log(`   ___|___|___`)
-console.log(`      |   |   `)
+console.log(`   ___|___|___`);
+console.log(`   ___|___|___`);
+console.log(`      |   |   `);
 
-console.log("------------------")
+console.log("------------------");
 
 let quadro = Array(9).fill(' '); // inicializa o tabuleiro preenchendo os 9 elementos desse array com o espaço em branco
 let jogadorAtual = 'X'; // define que o jogador atual é x
@@ -65,7 +64,7 @@ console.log(vencedor ? `O ${vencedor} ganhou!` : 'Deu Velha!'); // imprime o res
 function acabar() {
   // verifica se alguém ganhou ou se não existem mais espaços vazios no quadro
   return verificar() || !quadro.includes(' ');
-}
+};
 
 function verificar() {
   // todas as possíveis filas vencedoras
@@ -81,6 +80,6 @@ function verificar() {
     }
   }
   return null; // se ninguém ganhou ainda, retorna null
-}
+};
 
-console.log("------------------")
+console.log("------------------");
