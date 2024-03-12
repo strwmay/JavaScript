@@ -14,19 +14,19 @@ while (popA < popB) {
   ano++;
 };
 
-console.log("----------------------------------------------------------------------------------------------");
+console.log("--------------------------------------------------------");
 
 console.log(
   `em ${ano} anos o país A terá uma população de ${Math.round(popA)} 
   habitantes e o país B terá ${Math.round(popB)} habitantes`
 );
 
-console.log("----------------------------------------------------------------------------------------------");
+console.log("-------------------------------------------------------");
 
 console.log("");
 
 // criar um jogo da velha que mostre as informações dentro da imagem abaixo.
-// inserir as informações de forma ramdomica.
+// inserir as informações de forma randomica.
 // informar ao final quem ganhou:
 
 console.log("------------------");
@@ -56,7 +56,7 @@ console.log(`  ___|___|___`);
 console.log(`   ${quadro[3]} | ${quadro[4]} | ${quadro[5]}`);
 console.log(`  ___|___|___`);
 console.log(`   ${quadro[6]} | ${quadro[7]} | ${quadro[8]}`);
-console.log(`     |   |   `);                                // determina o numero para posição de cada celula no quadro 
+console.log(`     |   |   `);                                 // determina o numero para posição de cada celula no quadro 
 
 let vencedor = verificar(); // verifica quem ganhou
 console.log(vencedor ? `O ${vencedor} ganhou!` : 'Deu Velha!'); // imprime o resultado
