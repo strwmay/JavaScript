@@ -100,3 +100,61 @@ sorveteMorango.setPreco(10.5);
 console.log(`         por somente R$ ${sorveteMorango.getPreco()}0 !`);
 
 console.log(`================================== IMPERDÍVEL`);
+
+console.log("----------------------------------------------");
+
+// 1. Comparação de strings (sem case sensitive):
+// Escreva uma função em JavaScript que recebe duas strings e verifica se elas são iguais
+// Ignorando o tamanho das letras (maiúsculas e minúsculas).
+
+function comparaStrings(string1, string2) {
+  // Convertendo ambas as strings para minúsculas para fazer a comparação
+  var string1Minuscula = string1.toLowerCase();
+  var string2Minuscula = string2.toLowerCase();
+
+  // Comparando as strings
+  if (string1Minuscula == string2Minuscula) {
+    return "As strings são iguais !!";
+  } else {
+    return "As strings são diferentes !!";
+  }
+}
+
+var string1 = "eu gosto de azul";
+var string2 = "azul é minha cor favorita";
+
+console.log(comparaStrings(string1, string2));
+
+// 2. Extrair números de uma string:
+// Crie uma função em JavaScript que recebe uma string e retorna uma lista contendo apenas os números encontrados nela.
+
+console.log("--------------------------------------");
+
+function extractNumbers(string) {
+  var matches = string.match(/\d+/g); // expressão regular para encontrar números
+  if (matches) {
+    return matches.map(Number);
+  }
+} 
+
+var string = `Meu nome é Maysa eu nasci dia 7 de junho de 2008, tenho 15 anos! 
+   Tenho uma cachorrinha que nasceu no dia das crianças, 12 de outubro, 
+   e ela vai fazer 6 aninhos esse ano! temos 10 anos de diferença, já que ela é de 2018`;
+
+console.log(extractNumbers(string));
+
+console.log("--------------------------------------");
+
+// 3. Inverter a ordem das palavras em uma frase:
+// Desenvolva uma função em JavaScript que recebe uma frase e retorna
+// uma nova string com a ordem das palavras invertida.
+
+function inverterFrase(frase) {
+  return frase.split(" ").reverse().join(" ");
+}
+
+var string = "trás pra frente";
+console.log(string);
+console.log(inverterFrase(string));
+
+console.log("----------------------------------------------");
