@@ -48,3 +48,55 @@ May.apresentarSe();
 console.log(
   "------------------------------------------------------------------"
 );
+console.log("");
+console.log("_______________| SORVETERIA |________________");
+// Crie e utilize uma classe "Sorvete" contendo as propriedades: sabor, preço e tamanho (P | M | G)
+// Crie um sorvete de morango grande
+// Crie um sorvete de chocolate pequeno
+// Crie um sorvete de melância médio
+// Altere o preço do sorvete de morango grande para R$ 10,50
+
+class Sorvete {
+  constructor(sabor, preco, tamanho) {
+    this.sabor = sabor;
+    this.preco = preco;
+    this.tamanho = tamanho;
+  }
+
+  getPreco() {
+    return this.preco;
+  }
+
+  setPreco(novoPreco) {
+    this.preco = novoPreco;
+  }
+
+  pedido() {
+    console.log(
+      `- Sorvete de ${this.sabor} | Tamanho ${this.tamanho} : R$ ${this.preco}0`
+    );
+  }
+}
+
+var sorveteChocolate = new Sorvete("Chocolate", 5.5, "P");
+sorveteChocolate.pedido();
+
+var sorveteMelancia = new Sorvete("Melância ", 10.5, "M");
+sorveteMelancia.pedido();
+
+var sorveteMorango = new Sorvete("Morango  ", 15.5, "G");
+sorveteMorango.pedido();
+
+console.log("");
+
+console.log(`PROMOÇÂO ====================================`);
+
+console.log(
+  `Sorvete de ${sorveteMorango.sabor} tamanho ${
+    sorveteMorango.tamanho
+  }, de R$ ${sorveteMorango.getPreco()}0,`
+);
+sorveteMorango.setPreco(10.5);
+console.log(`         por somente R$ ${sorveteMorango.getPreco()}0 !`);
+
+console.log(`================================== IMPERDÍVEL`);

@@ -152,3 +152,44 @@ for (const animal of animais) {
 }
 
 console.log("------------------------------------------------------------");
+
+// Criando uma classe Retângulo
+class Retangulo {
+  constructor(comprimento, largura) {
+    this.comprimento = comprimento;
+    this.largura = largura;
+  }
+
+  obterArea() {
+    return this.comprimento * this.largura;
+  }
+
+  obterPerimetro() {
+    return this.comprimento * 2 + this.largura * 2;
+  }
+  setComprimento(novoComprimento) {
+    this.comprimento = novoComprimento;
+  }
+
+  setLargura(novaLargura) {
+    this.largura = novaLargura;
+  }
+}
+
+// Criando um objeto do "tipo" Retângulo
+var ret = new Retangulo(10, 15);
+function displayRet(retangulo) {
+  console.table(retangulo);
+  console.log(`comprimento = ${retangulo.comprimento}`);
+  console.log(`largura = ${retangulo.largura}`);
+  console.log(`área = ${retangulo.obterArea()}`);
+  console.log(`perímetro = ${retangulo.obterPerimetro()}`);
+}
+
+displayRet(ret);
+ret.setComprimento(20);
+displayRet(ret);
+ret.setLargura(20);
+displayRet(ret);
+
+console.log("------------------------------------------------------------");
